@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-3CTD XHTML 1.0 TransitionalN" "http:ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http:ww.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>管理中心</title>
+<script type="text/javascript" src="photo-view.js"></script>
+</head>
+<style>
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{overflow:hidden;_zoom:1;}
+.up_img_box{
+    width: 106px;
+    height: 106px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+}
+.img_list .img_box_view {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+</style>
+<body>
+<div class="add_sork_add_photo fl">
+    <div class="img_list clearfix" id="img_list">
+        <img class="imgViews" src=""  alt="" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);width: 0px;height: 0px;display: none;" data="不能删除，为ie做处理的。"/>
+    </div>
+    <div class="up_img_box cp" id="op_photo"><i class="icon iconfont icon-tianjia work_add_photo"></i></div>
+    <input type="file" style="opacity: 0;filter: alpha(opacity=0);height: 1px;margin-bottom: -1px;" name="file" id="filel" img-list-view="img_list"  onchange="viewImage(this,106,106)"/>
+</div>
+</body>
+<script>
+window.onload = function(){
+   document.getElementById('op_photo').onclick = function(){
+   	document.getElementById('filel').click()
+   }
+}
+</script>
+</html>
